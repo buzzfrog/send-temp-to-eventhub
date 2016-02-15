@@ -132,7 +132,7 @@ Remember to save your query.
 ### 4. Start the client program
 1\. Open index.js.
 
-2\. Edit the connection setting
+2\. Edit the connection setting and save.
 
 ```
 var eventHubsNamespace = 'sensortag001',
