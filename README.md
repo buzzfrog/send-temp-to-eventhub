@@ -1,23 +1,23 @@
-# SensorTag Azure #
-This project is designed to demonstrate how from a device via Microsoft Azure can display information in PowerBI. (This project got much inspiration from the following project [SensorTagToEventHub]( https://github.com/Azure/azure-stream-analytics/tree/master/Samples/SensorDataAnalytics/SensorTagToEventHub).)
+# Node.JS -> EventHub -> Stream Analytics -> PowerBI #
 
 ## Overview ##
-A *Universal Windows App* connects to the *SensorTag* with *Bluetooth*. This app reads the sensor each second and sends the data to *Azure EventHub*. An *Azure Stream Analytics* job analyse the data and send it to *PowerBI*.
 
-## What you need ##
-* Windows 10 computer
-* TI SensorTag
-* Windows Azure Account using *Organization account* (Power BI works with Organization account only. Organization account is often your work or business email address e.g. xyz@mycompany.com. 
-Personal emails like xyz@hotmail.com are not organizations accounts).
+This example creates a IoT Hot Path flow, from a simple node.js client, into EventHub, through Stream Analytics and displayed
+in PowerBI.
 
 ## Getting started ##
 
-### 1. Pair the TI SensorTag in the *Manage Bluetooth devices* settings ###
-> To make sure that the demonstration work, it is a good practice to remove other SensorTags that are already paired in the system.
+### 1. Download the source code or the compiled executable. ####
+1\. Clone this repository.
+```
+git clone https://github.com/buzzfrog/send-temp-to-eventhub.git
+```
+2\. Go to the directory and type:
+```
+npm install
+```
 
-### 2. Download the source code or the compiled executable. ####
-
-### 3. Create EventHub in Azure ####
+### 2. Create EventHub in Azure ####
 1\. Open [http://manage.windowsazure.com](http://manage.windowsazure.com)
 
 2\. Navigate to the *Service Bus pane*.
@@ -66,7 +66,7 @@ see any data in the dashboard.)
 
 ![Event Hub Diagnostics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-diagnostics.png)
 
-### 4. Create Stream Analytics Jobs in Azure ###
+### 3. Create Stream Analytics Jobs in Azure ###
 1\. Navigate to *Stream Analytics pane*.
 
 ![New Stream Analytics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-new.png)
@@ -143,8 +143,20 @@ Remember to save your query.
 
 12\. Click on *START* in the dark menu in the bottom of the screen to start the job.
 
+### 4. Start the client program
+1\. Open index.js.
 
+2\. Edit the connection setting
 
+```
+var eventHubsNamespace = 'sensortag001',
+    eventHubsHubName = 'sensortag',
+    eventHubsKeyName = 'sensortag-input',
+    eventHubsKey = ''
+```
+![PowerBI Main Page](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/event-hub-keys1.png)
+
+![PowerBI Main Page](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/event-hub-keys2.png)
 
 ### 5. Create a PowerBI report ###
 
