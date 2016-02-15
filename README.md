@@ -180,23 +180,23 @@ output from the Stream Analytics job.
 
 8\. Pin the visualization to a dashboard
 
-![PowerBI Pin](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-pin.png)
+![PowerBI Pin](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-pin.png)
 
 9\. But first, save the visualization as a report
 
-![PowerBI Save Report](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-save-report.png)
+![PowerBI Save Report](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-save-report.png)
 
 10\. Now is it time to pin the report to a dashboard
 
-![PowerBI Create Dashboard](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-create-dashboard.png)
+![PowerBI Create Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-create-dashboard.png)
 
 11\. Open the new dashboard
 
-![PowerBI Open Dashboard](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-open-dashboard.png)
+![PowerBI Open Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-open-dashboard.png)
 
 12\. Now is it live!
 
-![PowerBI View Dashboard](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-show-dashboard.png)
+![PowerBI View Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-show-dashboard.png)
 
 
 
