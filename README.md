@@ -26,60 +26,60 @@ npm install
 
 3\. Click on the plus sign to create a new *Service Bus Namespace* and enter the information seen in the screenshot below.
 
-![New Service Bus Namespace](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/service-bus-create-namespace.png)
+![New Service Bus Namespace](images/service-bus-create-namespace.png)
 
 4\. Click on the new Service Bus namespace.
 
 5\. Open the tab *EVENT HUBS* and click on *Create a New Event Hub* in your Service Bus namespace.
 
-![Create new Event Hub](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/service-bus-create-event-hub-start.png)
+![Create new Event Hub](images/service-bus-create-event-hub-start.png)
 
 6\. Enter the following information and click on *Create a new Event Hub*.
 
-![Create new Event Hub](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-create.png)
+![Create new Event Hub](images/event-hub-create.png)
 
 7\. Click on the new Event hub after it is created.
 
-![New Event Hub Ready](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-created.png)
+![New Event Hub Ready](images/event-hub-created.png)
 
 8\. Click on the tab *CONFIGURE* and enter the information shown in the screen below in the section *shared access policy*. Remember
 to also save it by clicking SAVE in the bottom of the screen.
 
-![New Shared Access Policy](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-policy.png)
+![New Shared Access Policy](images/event-hub-shared-access-policy.png)
 
 When it is saved a new section will appear, *shared access key generator*. The *Policy Name* and the *Primary Key* will we
 use later in the application that sends the information to the EventHub.
 
-![Shared Access Key Generator](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
+![Shared Access Key Generator](images/event-hub-shared-access-key-generator.png)
 
 ### 3. Create Stream Analytics Jobs in Azure ###
 1\. Navigate to *Stream Analytics pane*.
 
-![New Stream Analytics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-new.png)
+![New Stream Analytics](images/stream-analytics-new.png)
 
 2\. Create a new Stream Analytics Job.
 
-![Create New Stream Analytics Job](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-create-new.png)
+![Create New Stream Analytics Job](images/stream-analytics-create-new.png)
 
-![Stream Analytics Job](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job.png)
+![Stream Analytics Job](images/stream-analytics-job.png)
 
 3\. Click on the newly created job to open the details page for that job.
 
-![Stream Analytics Job Detail](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-detail.png)
+![Stream Analytics Job Detail](images/stream-analytics-job-detail.png)
 
 4\. Click on *INPUTS* in the tab menu to see a list of inputs for this job.
 
-![Stream Analytics Input](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input.png)
+![Stream Analytics Input](images/stream-analytics-job-input.png)
 
 5\. Click on *Add an input*
 
-![Stream Analytics Input Create 1](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-1.png)
+![Stream Analytics Input Create 1](images/stream-analytics-job-input-create-1.png)
 
-![Stream Analytics Input Create 2](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-2.png)
+![Stream Analytics Input Create 2](images/stream-analytics-job-input-create-2.png)
 
-![Stream Analytics Input Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-3.png)
+![Stream Analytics Input Create 3](images/stream-analytics-job-input-create-3.png)
 
-![Stream Analytics Input Create 4](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-input-create-4.png)
+![Stream Analytics Input Create 4](images/stream-analytics-job-input-create-4.png)
 
 6\. Create a new output by going to the *OUTPUTS* tab
 
@@ -90,25 +90,25 @@ that new user when you authorize the connection that we will do in the instructi
 
 7\. Click on *Add an output*
 
-![Stream Analytics Output Create](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-1.png)
+![Stream Analytics Output Create](images/stream-analytics-job-output-create-1.png)
 
 8\. Authorize the connection to PowerBI
 
 It is here you need your organizational account.
 
-![Stream Analytics Output Authorize](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-authorize.png)
+![Stream Analytics Output Authorize](images/stream-analytics-job-output-create-authorize.png)
 
 9\. PowerBI settings
 
-![Stream Analytics Output Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-create-3.png)
+![Stream Analytics Output Create 3](images/stream-analytics-job-output-create-3.png)
 
 10\. Output created
 
-![Stream Analytics Output Create 3](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-output-created.png)
+![Stream Analytics Output Create 3](images/stream-analytics-job-output-created.png)
 
 11\. Time to create the query that analyze the stream. Open the tab *QUERY*.
 
-![Stream Analytics Query](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/stream-analytics-job-query.png)
+![Stream Analytics Query](images/stream-analytics-job-query.png)
 
 ```
 SELECT 
@@ -140,9 +140,9 @@ var eventHubsNamespace = 'sensortag001',
     eventHubsKeyName = 'sensortag-input',
     eventHubsKey = ''
 ```
-![Event Hub Keys 1](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/even-hub-keys1.png)
+![Event Hub Keys 1](images/even-hub-keys1.png)
 
-![Event Hub Keys 2](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/even-hub-keys2.png)
+![Event Hub Keys 2](images/even-hub-keys2.png)
 
 3\. Run the program
 ```
@@ -156,15 +156,15 @@ output from the Stream Analytics job.
 
 2\. Click on the heading *Power BI* to open your workspace.
 
-![PowerBI Main Page](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-main.png)
+![PowerBI Main Page](images/powerbi-main.png)
 
 3\. Click on the hamburger icon up in the left corner to expand the navigation pane.
 
-![PowerBI Workspace](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-open-ws.png)
+![PowerBI Workspace](images/powerbi-open-ws.png)
 
 4\. If all previous steps has worked, you will now see that a new dataset called *sensortag* has appeared.
 
-![PowerBI Dataset](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-dataset.png)
+![PowerBI Dataset](images/powerbi-dataset.png)
 
 5\. Click on the dataset *sensortag* to start creating a visualization.
 
@@ -172,31 +172,31 @@ output from the Stream Analytics job.
 
 6\. Click on the line chart icon in the Visualizations pane.
 
-![PowerBI Create a Line Chart](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-dataset-open.png)
+![PowerBI Create a Line Chart](images/powerbi-dataset-open.png)
 
 7\. Drag *time* to the field *Axis* and *temperature* to the field *Values*
 
-![PowerBI Create a Line Chart](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/powerbi-create-line-chart.png)
+![PowerBI Create a Line Chart](images/powerbi-create-line-chart.png)
 
 8\. Pin the visualization to a dashboard
 
-![PowerBI Pin](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-pin.png)
+![PowerBI Pin](images/powerbi-pin.png)
 
 9\. But first, save the visualization as a report
 
-![PowerBI Save Report](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-save-report.png)
+![PowerBI Save Report](images/powerbi-save-report.png)
 
 10\. Now is it time to pin the report to a dashboard
 
-![PowerBI Create Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-create-dashboard.png)
+![PowerBI Create Dashboard](images/powerbi-create-dashboard.png)
 
 11\. Open the new dashboard
 
-![PowerBI Open Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-open-dashboard.png)
+![PowerBI Open Dashboard](images/powerbi-open-dashboard.png)
 
 12\. Now is it live!
 
-![PowerBI View Dashboard](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/powerbi-show-dashboard.png)
+![PowerBI View Dashboard](images/powerbi-show-dashboard.png)
 
 
 
