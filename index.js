@@ -10,7 +10,7 @@ var chance = require('chance').Chance();
 var eventHubsNamespace = 'sensortag001',
     eventHubsHubName = 'sensortag',
     eventHubsKeyName = 'sensortag-input',
-    eventHubsKey = 'J2bHyh70A9vPp+n7DdO3cnxap/MWuCEvcPW55bwL4jY='
+    eventHubsKey = ''
 
 eventHubs.init({
     hubNamespace: eventHubsNamespace,
