@@ -164,7 +164,7 @@ output from the Stream Analytics job.
 
 4\. If all previous steps has worked, you will now see that a new dataset called *sensortag* has appeared.
 
-![PowerBI Dataset](images/powerbi-dataset.png)
+![PowerBI Dataset](images/powerbi-datasets.png)
 
 5\. Click on the dataset *sensortag* to start creating a visualization.
 
