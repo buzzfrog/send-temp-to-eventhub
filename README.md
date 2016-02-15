@@ -52,20 +52,6 @@ use later in the application that sends the information to the EventHub.
 
 ![Shared Access Key Generator](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-shared-access-key-generator.png)
 
-#### Ready to test sendning the information to Azure ###
-We are now ready to start sending information from the SensorTag into Azure.
-
-1\. Start SensorTagReader on you computer and enter the information to connect to the Event Hub.
-
-![SensorTagReader](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/sensortagreader-settings.png)
-
-2\. Click on Start and make sure that the SensorTag is connected.
-
-If everything is ok you will see events data appering in the dashboard. (This could take up to ten minutes before you
-see any data in the dashboard.)
-
-![Event Hub Diagnostics](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/event-hub-diagnostics.png)
-
 ### 3. Create Stream Analytics Jobs in Azure ###
 1\. Navigate to *Stream Analytics pane*.
 
@@ -154,9 +140,9 @@ var eventHubsNamespace = 'sensortag001',
     eventHubsKeyName = 'sensortag-input',
     eventHubsKey = ''
 ```
-![PowerBI Main Page](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/event-hub-keys1.png)
+![Event Hub Keys 1](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/even-hub-keys1.png)
 
-![PowerBI Main Page](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/event-hub-keys2.png)
+![Event Hub Keys 2](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/even-hub-keys2.png)
 
 ### 5. Create a PowerBI report ###
 
