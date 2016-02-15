@@ -144,6 +144,11 @@ var eventHubsNamespace = 'sensortag001',
 
 ![Event Hub Keys 2](https://github.com/buzzfrog/send-temp-to-eventhub/blob/master/images/even-hub-keys2.png)
 
+3\. Run the program
+```
+node index
+```
+
 ### 5. Create a PowerBI report ###
 
 1\. Go to http://www.powerbi.com and login with the same account as you used to authenticate the connection to PowerBI when creating the
