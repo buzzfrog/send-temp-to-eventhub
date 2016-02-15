@@ -22,7 +22,7 @@ npm install
 
 2\. Navigate to the *Service Bus pane*.
 
-![Service Bus](https://github.com/buzzfrog/SensorTag-Azure/blob/master/images/service-bus.png)
+![Service Bus](images/service-bus.png)
 
 3\. Click on the plus sign to create a new *Service Bus Namespace* and enter the information seen in the screenshot below.
 
